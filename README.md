@@ -158,16 +158,4 @@ aws codepipeline list-pipeline-executions \
 cdk destroy --all --force
 ```
 
-## Cost Estimate (ap-south-1, per month)
 
-| Resource | Est. Cost |
-|----------|-----------|
-| RDS t3.micro (on-demand) | ~$15 |
-| Fargate (0.5 vCPU / 1 GB, 24/7) | ~$18 |
-| ALB | ~$18 |
-| NAT Gateway | ~$35 |
-| CodeBuild (free tier: 100 min/month) | ~$0-$3 |
-| ECR (first 500MB free) | ~$0-$1 |
-| **Total** | **~$85-$90/month** |
-
-> 💡 Tip: Stop Fargate tasks and RDS when not in use to reduce costs.
